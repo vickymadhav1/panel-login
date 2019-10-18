@@ -1,0 +1,31 @@
+<div class="sub_main main_content">
+  <div class="container otp_form">
+    <form [formGroup]="Auth" class="globle_from">
+      <div class="mail" *ngIf="isShow">
+        <mat-form-field>
+          <input matInput placeholder="Mobile Number" formControlName="mobileno" #view required (input)="null">
+        </mat-form-field>
+        <button class="mybtn" mat-button (click)='IsScheduled=false' color="accent" (click)="getOtp()" (click)="showAlert()" (click)='isShow=false'
+          [disabled]='!view.value'>Get OTP</button>
+      </div>
+      <div *ngIf="isHide" class="mail" [hidden]="isShow">
+        <mat-form-field [hidden]="isShow">
+          <input matInput placeholder="Enter OTP" formControlName="otp" #Verify required (input)="null">
+        </mat-form-field>
+        <button class="mybtn" mat-button color="accent" (click)="EnterOtp()" (click)='isShow=false || isHide=false'
+          [disabled]='!Verify.value'>enter OTP</button>
+      </div>
+    </form>
+    <form action="" [formGroup]="Auth">
+    <div class="atom" [hidden]="isHide">
+      <a>
+      <img class="txt_img" src="../../assets/LinkedIn-horizontal.png" alt="">
+      <mat-form-field [hidden]="isShow">
+        <input matInput placeholder="Enter Your linkedIn emailId" formControlName="email" #Verify required (input)="null">
+      </mat-form-field>
+      <a href=" https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=81j1531v0g4zou&redirect_uri=http://13.235.254.91:8086/linkedin&state=fooobar&scope=r_liteprofile%20r_emailaddress" mat-fab color="accent" (click)="goTo()" [disabled]='!Verify.value'>Verify</a>
+      </a>
+    </div>
+    </form>
+  </div>
+</div>

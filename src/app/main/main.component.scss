@@ -1,0 +1,40 @@
+.main_content {
+    padding: 5rem 0rem 3rem 0rem;
+    margin: 0 auto;
+  }
+  .example {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example_form > * {
+    width: 100%;
+  }
+  .globle_from{
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 0 auto;
+  }
+  .requred {
+    padding:2rem 2rem 2rem 2rem
+}
+.org{
+  padding: 0rem 4rem 0rem 4rem;
+}
+.mat-select{
+  border: none;
+}
+.bottom{
+  padding-bottom: 10px;
+  width: 100%;
+  margin-left: 30px;
+}
+.form-control:focus{
+  box-shadow: none;
+}
+.my_button{
+  border: 1px solid pink;
+  background: darkblue;
+  color: white;
+}

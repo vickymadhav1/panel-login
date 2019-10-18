@@ -1,0 +1,50 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+  .masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .main_content {
+    padding: 5rem 0rem 0rem 0rem;
+    margin: 0 auto;
+  }
+  .mat-form-field{
+    width: 100%;
+  }
+  .globle_form{
+    padding: 40px;
+  }
+  .otp_form {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 40%;
+    height: 300px;
+    padding: 45px;
+}
+  .mail{
+    display: flex;
+    padding-top: 4rem;
+  }
+  .mobile{
+    border: none;
+    box-shadow: none;
+  }
+  .atom{
+    text-align: center;
+    margin-top: 40px;
+  }
+  .txt_img{
+    height: 5rem;
+  }
+  .mybtn{
+    height: 30px;
+    margin-top: 20px;
+  }

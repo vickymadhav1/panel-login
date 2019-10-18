@@ -1,0 +1,131 @@
+<div class="container main_content">
+  <form [formGroup]="addForm" (ngSubmit)="PostNumberOtp()" class="org">
+    <div class="row globle_from">
+      <div class="col-md-6 requred">
+        <div class="example_form">
+          <mat-form-field>
+            <input matInput placeholder="First Name" formControlName="firstname" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }">
+            <div *ngIf="submitted && f.firstname.errors" class="invalid-feedback">
+              <div *ngIf="f.firstname.errors.required">first Name is required</div>
+            </div>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="job Role" formControlName="jobRole" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.jobRole.errors }">
+            <div *ngIf="submitted && f.jobRole.errors" class="invalid-feedback">
+              <div *ngIf="f.jobRole.errors.required">job Role is required</div>
+            </div>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Primary Skills" formControlName="primskills" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }">
+            <div *ngIf="submitted && f.primskills.errors" class="invalid-feedback">
+              <div *ngIf="f.primskills.errors.required">Primary Skills is required</div>
+            </div>
+          </mat-form-field>
+          <mat-form-field>
+              <input matInput placeholder="Secondary Skills" formControlName="secskills" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }">
+              <div *ngIf="submitted && f.secskills.errors" class="invalid-feedback">
+                <div *ngIf="f.secskills.errors.required">Secondary Skills is required</div>
+              </div>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="About your self" formControlName="About" class="form-control"
+                  [ngClass]="{ 'is-invalid': submitted && f.About.errors }">
+                <div *ngIf="submitted && f.About.errors" class="invalid-feedback">
+                  <div *ngIf="f.About.errors.required">Secondary Skills is required</div>
+                </div>
+              </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Interviews Taken For Companies / Clients" formControlName="companyInetrview"
+              class="form-control" [ngClass]="{ 'is-invalid': submitted && f.companyInetrview.errors }">
+            <div *ngIf="submitted && f.companyInetrview.errors" class="invalid-feedback">
+              <div *ngIf="f.companyInetrview.errors.required">Interviews Taken For Companies is required</div>
+            </div>
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="Best Ideal Time to take VIDEO Interviews" formControlName="videoIneteview"
+              class="form-control" [ngClass]="{ 'is-invalid': submitted && f.videoIneteview.errors }">
+            <div *ngIf="submitted && f.videoIneteview.errors" class="invalid-feedback">
+              <div *ngIf="f.videoIneteview.errors.required"> Ideal Time to take VIDEO Interviews is required</div>
+            </div>
+          </mat-form-field>
+         
+          <mat-form-field>
+            <input matInput placeholder="Finished Interviews" formControlName="FinishedInterviews" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.FinishedInterviews.errors}">
+            <div *ngIf="submitted && f.FinishedInterviews.errors" class="invalid-feedback">
+              <div *ngIf="f.FinishedInterviews.errors.required">first Name is required</div>
+            </div>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col-md-6 requred">
+        <div class="example_form">
+          <mat-form-field>
+            <input matInput placeholder="Last Name" formControlName="lastname" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }">
+            <div *ngIf="submitted && f.firstname.errors" class="invalid-feedback">
+              <div *ngIf="f.firstname.errors.required">first Name is required</div>
+            </div>
+          </mat-form-field>
+          <mat-form-field>
+              <input matInput placeholder="Total Years Of Experience" formControlName="totalexp" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.totalexp.errors }">
+              <div *ngIf="submitted && f.totalexp.errors" class="invalid-feedback">
+                <div *ngIf="f.totalexp.errors.required">Total Experience is required</div>
+              </div>
+            </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Interviews Taken As Role By" formControlName="roleBy" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.roleBy.errors }">
+            <div *ngIf="submitted && f.roleBy.errors" class="invalid-feedback">
+              <div *ngIf="f.roleBy.errors.required">Interviews Taken As Role By required</div>
+            </div>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Number of Interviews Taken so Far" formControlName="TakensoFar"
+              class="form-control" [ngClass]="{ 'is-invalid': submitted && f.TakensoFar.errors }">
+            <div *ngIf="submitted && f.TakensoFar.errors" class="invalid-feedback">
+              <div *ngIf="f.TakensoFar.errors.required">Number of Interviews Taken  is required</div>
+            </div>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Available Time Slots" formControlName="AvailableTimeSlots" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.AvailableTimeSlots.errors }">
+            <div *ngIf="submitted && f.AvailableTimeSlots.errors" class="invalid-feedback">
+              <div *ngIf="f.AvailableTimeSlots.errors.required">Available Time Slotsis required</div>
+            </div>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Scheduled Interviews" formControlName="scheduledinterviews" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.scheduledinterviews.errors }">
+            <div *ngIf="submitted && f.scheduledinterviews.errors" class="invalid-feedback">
+              <div *ngIf="f.scheduledinterviews.errors.required">Scheduled Interviews is required</div>
+            </div>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Invoice Generation / Pending / Clearance" formControlName="Clearance"
+              class="form-control" [ngClass]="{ 'is-invalid': submitted && f.Clearance.errors }">
+            <div *ngIf="submitted && f.Clearance.errors" class="invalid-feedback">
+              <div *ngIf="f.Clearance.errors.required">Generation/Pending/Clearance is required</div>
+            </div>
+          </mat-form-field>
+          <mat-form-field>
+              <input matInput placeholder="Best Ideal Time to take Telephonic Interviews" formControlName="TelephonicInterviews"
+                class="form-control" [ngClass]="{ 'is-invalid': submitted && f.TelephonicInterviews.errors }">
+              <div *ngIf="submitted && f.TelephonicInterviews.errors" class="invalid-feedback">
+                <div *ngIf="f.TelephonicInterviews.errors.required">Telephonic Interviews is required</div>
+              </div>
+            </mat-form-field>
+        </div>
+      </div>
+      <div class="bottom">
+        <button class="submit-btn my_button" mat-button color="primary">Primary</button>
+      </div>
+    </div>
+  </form>
+</div>
