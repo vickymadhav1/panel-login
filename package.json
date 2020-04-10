@@ -27,7 +27,7 @@
     "angular-linkedin-sdk": "^0.2.0",
     "angular-social-login": "0.0.1",
     "angularx-social-login": "^2.1.1",
-    "auth0-js": "^9.11.3",
+    "auth0-js": "^9.13.2",
     "hammerjs": "^2.0.8",
     "observable-map": "0.0.4",
     "rxjs": "~6.4.0",
